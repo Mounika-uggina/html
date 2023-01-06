@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestred</title>
+   <style>
+    .one::after{
+        content: "*";
+        color: red;
+        font-size: 15px;
+    
+    }
+    #gender{
+        margin-left: 18px;
+    }
+    h2{
+        position: relative;
+        max-width: 500px;
+        margin: 40px auto;
+        text-align: center;
+    }
+    h2:before{
+        content: "";
+        height: 2px;
+        width: 130px;
+        background: black;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    h2:after{
+        content: "";
+        height: 2px;
+        width: 130px;
+        background: black;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    #gender{
+        margin-left: -22rem;
+        
+    }
+    input[type=submit]{
+        background-color: blue;
+        color: white;
+        width: 70px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    input[type=tel] {
+        border: 0px;
+        outline: 0px;
+        border-bottom: 2px solid black;
+    }
+    input[type=gmail] {
+        border: 0px;
+        outline: 0px;
+        border-bottom: 2px solid black;
+    }
+    label{
+        font-weight: bold;
+    }
+    form{
+        margin-left: 9px;
+    }
+   </style>
+</head>
+<body>
+    <h2>Personal Details</h2>
+    <form action="./3rd page.html">
+    <table>
+        <tr>
+         <td class="one">first name</td>
+         <td>middle name</td>
+         <td class="one">last name</td>
+         </tr>
+         
+    
+        <td><input type="text" placeholder="first name" value="" required></td>
+        
+        <td><input type="text" placeholder="middle name" value=""></td>
+        
+        <td><input type="text" placeholder="last name" value="" required></td>
+    </table><br>
+    <label>Enter your date of birth:</label>
+    <input type="date"><br><br>
+    <label>Enter your mobile number:</label>
+    <input type="tel" value="+91" required><br><br>
+    <label>G-mail:</label>
+    <input type="gmail" placeholder="example@gmail.com" value="" required><br><br>
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" required>male</input><br>
+    <input type="radio" name="gender" required>female</input><br>
+    <input type="radio" name="gender" required>others</input><br>
+    <label>upload your proof of identity:</label>
+    <input type="file" no file choosen><br><br>
+    <label>Address:</label><br>
+    <textarea name="" id="" cols="28" rows="8" style="margin-top: -15px; margin-left: 70px;" required></textarea><br><br>
+    <label>pin code:</label>
+    <input type="pin code" maxlength="6digits" required><br><br>
+    <label>District:</label>
+    <input list="Districts" id="states" required/>
+   <datalist id="Districts">
+    <option value="Visakhapatnam"/>
+    <option value="Anakapalli"/>
+    <option value="chittor"/>
+    <option value="Guntur"/>
+   </datalist><br><br>
+<label>states:</label>
+<input list="District" required/>
+<datalist id="District">
+    <option value="Andhra pradesh"/>
+    <option value="Tamila naddu"/>
+    <option value="Utthar pradesh"/>
+    <option value="Telengana"/>
+</datalist><br><br>
+<label>Countries:</label>
+<input list="Countries" id="" required>
+<datalist id="Countries">
+    <option value="India"/>
+    <option value="America"/>
+    <option value="Africa"/>
+    <option value="US"/>
+</datalist><br><br>
+<input type="checkbox" required>I here by declare above information is true <br><br>
+<input type="submit">
+</form>
+</body>
+</html>

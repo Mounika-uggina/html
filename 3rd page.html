@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          h2{
+        position: relative;
+        max-width: 500px;
+        margin: 40px auto;
+        text-align: center;
+    }
+    h2:before{
+        content: "";
+        height: 2px;
+        width: 130px;
+        background: black;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    h2:after{
+        content: "";
+        height: 2px;
+        width: 130px;
+        background: black;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+  input[type=submit]{
+    background-color: blue;
+    border: none;
+    color: antiquewhite;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    color: white;
+    background-color: orangered;
+}
+label{
+    font-weight: bold;
+}
+input[type=text] {
+    border: 0px;
+    outline: 0px;
+    border-bottom: 2px solid black;
+}
+form{
+    margin-left: 9px;
+}
+    </style>
+</head>
+<body>
+    <h2>Educational DEtails</h2> 
+        <form action="./4th page.html">
+            <label for="">Hightest Educational Qualification:</label>
+            <select name="" id required="">
+                <option value="">10th</option>
+                <option value="">Inter/Diploma</option>
+                <option value="">Degree/B.Tech</option>
+            </select><br><br>
+            <label for="">Specialization:</label>
+            <input list="specialization" required>
+            <datalist id="specialization">
+                <option value="Accounts"></option>
+                <option value="Computer science"></option>
+                <option value="Bussiness"></option>
+                <option value="Mechanical"></option>
+                <option value="Civil"></option>
+            </datalist><br><br>
+            <label for="">College name:</label>
+            <input type="text" required><br><br>
+            <label>Regd number:</label>
+            <input type="text" required><br><br>
+            <label for="">Current States:</label><br><br>
+            <input type="radio" name="current states" required>Pursuing</input><br>
+            <input type="radio" name="current states" required>Compelted</input><br><br>
+            <label for="">Arrears:</label><br><br>
+            <input type="radio" name="Arrears" required>I never seen</input><br>
+            <input type="radio" name="Arrears" required>I clear my arrears</input><br><br>
+            <label for="">Aggregate:</label>
+            <input type="percentage" min="50%" max="90%" required><br><br>
+            <label for="">upload any other certification:</label>
+            <input type="file"><br><br>
+            <label for="">Do you have all original ceritificates:</label><br><br>
+            <input type="radio" name="certification" required>yes</input><br>
+            <input type="radio" name="certification" required>no</input><br><br>
+            <input type="checkbox" required>I here by declare above information is true <br><br>
+            <input type="submit" value="click here to enroll the carres">
+        </form>
+        
+</body>
+</html>

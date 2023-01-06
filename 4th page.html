@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/819fd58903.js" crossorigin="anonymous"></script>
+    <style>
+        input[type=submit]{
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 7px;
+            font-size: large;
+            width: 9rem;
+            height: 2rem;
+            text-align: center;
+            margin-left: 47rem;
+            margin-top: 10rem;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: green;
+        }
+        label,p{
+            font-weight: bold;
+        }
+        marquee{
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-weight: lighter;
+            background-color: orangered;
+        }
+        i{
+            margin-left: -50px;
+            color: white;
+            size: 35px;
+        }
+        iframe{
+            float: right;
+            margin-right: 58rem;
+        }
+        h4{
+          float: right;
+          margin-right: 65rem;  
+        }
+        form{
+            margin-left: 9px;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="scroll" direction="right">Thank you for your interst to learn new skills</marquee>
+    <form action="./5th page.html">
+        <label for="">Cources Offered:</label>
+        <input list="languages" required>
+        <datalist id="languages">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JS"></option>
+            <option value="JAVA"></option>
+            <option value="REACT JS"></option>
+            <option value="PYTHON"></option>
+            <option value=".NET"></option>
+        </datalist><br><br>
+        <h4>Demo class here:</h4>
+        <iframe width="250" height="100" src="https://www.youtube.com/embed/x9bTBcron78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <label for="">Prices of courses:</label>
+        <select name="" id="" required>
+            <option value="">select</option>
+            <option value="">20,000 Rs</option>
+            <option value="">25,000 Rs</option>
+            <option value="">30,000 Rs</option>
+            <option value="">50,000 Rs</option>
+        </select><br><br>
+        <label for="">Are you comfort with:</label><br>
+      <input type="radio" name="comfort" required>online</input><br>
+      <input type="radio" name="comfort" required>offline</input><br><br>
+        <label for="">select your course declaration:</label>
+        <select name="" id=""required>
+            <option value="">select</option>
+            <option value="">3months</option>
+            <option value="">5months</option>
+            <option value="">6months</option>
+        </select><br><br>
+        <h4>classes pdf here:</h4>
+        <iframe src="C:\Users\GANESH\Downloads\Html\html_tutorial.pdf" frameborder="0" width="200px" height="100px"></iframe>
+        <p>Do you want placement assistance:</p>
+        <input type="radio" name="assistance" required>yes</input><br>
+        <input type="radio" name="assistance" required>no</input><br>
+        <p>Do you want on site:</p>
+        <input type="radio" name="site" required>Agree</input><br>
+        <input type="radio" name="site" required>Disagree</input><br><br>
+        <input type="checkbox" required>I am interst to learn new skills <br><br>
+        <input type="submit" value="Enroll"> <i class="fa-regular fa-face-smile"></i>
+    </form>
+</body>
+</html>
